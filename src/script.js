@@ -35,6 +35,7 @@ let postItem = [
 ];
 
 let postStorage = localStorage.getItem("posts");
+
 if (postStorage === null) {
   localStorage.setItem("posts", JSON.stringify(postItem));
 } else {
@@ -142,15 +143,17 @@ form.addEventListener("submit", (e) => {
       timestamp: "4s ago",
       user: {
         avatar:
-          "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.UCjS44Orge8IQWmfzTo4oQHaEs%3Fpid%3DApi&f=1&ipt=0dfb9615f856a005fd86f0ea2a5b996334b60e7f062e9ca5318e192bc633c4e3&ipo=images",
-        name: "Thom Yorke",
-        username: "@thomyorkeoffc",
+          "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.3NoIQmOqCodp08f28pWIWwHaJ4%3Fcb%3Dthfc1falcon2%26pid%3DApi&f=1&ipt=bbca61387c868b21908f6dc0ddd41b9ba43d688d44b2257b14c01904f7c42eef&ipo=images",
+        name: "Jeffrey Coleman Jr",
+        username: "@jeffreyjr",
       },
     };
 
     postItem.push(newPost);
     localStorage.setItem("posts", JSON.stringify(postItem));
     renderPost();
+
+    form.reset()
   } else {
     alert("Fill your content correctly.");
   }
