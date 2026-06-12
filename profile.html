@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/chitchait.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Profile - ChitChat</title>
     <link rel="stylesheet" href="/src/style.css" />
@@ -21,10 +21,7 @@
       <nav class="w-72 px-6 py-4 h-screen hidden md:block sticky top-0">
         <aside class="space-y-4 flex flex-col justify-between h-full">
           <div class="space-y-4 flex-1">
-            <a
-              href="index.html"
-              class="flex gap-3 font-medium text-3xl text-pink-500"
-            >
+            <a href="/" class="flex gap-3 font-medium text-3xl text-pink-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -50,7 +47,7 @@
             </a>
             <div class="flex flex-col gap-3">
               <a
-                href="index.html"
+                href="/"
                 class="flex gap-2 items-center rounded-xl py-2 px-3 font-light"
               >
                 <svg
@@ -147,7 +144,7 @@
             </button>
           </div>
           <div class="p-4">
-            <a href="register.html" class="flex gap-3 items-center w-fit">
+            <a href="login.html" class="flex gap-3 items-center w-fit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -185,7 +182,11 @@
                 <div
                   class="size-20 rounded-full ring-4 ring-zinc-800 overflow-hidden"
                 >
-                  <img src="/ava.jpg" class="object-cover h-full" alt="" />
+                  <img
+                    src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.3NoIQmOqCodp08f28pWIWwHaJ4%3Fcb%3Dthfc1falcon2%26pid%3DApi&f=1&ipt=bbca61387c868b21908f6dc0ddd41b9ba43d688d44b2257b14c01904f7c42eef&ipo=images"
+                    class="object-cover h-full w-full"
+                    alt="Profile pic"
+                  />
                 </div>
               </div>
               <button class="rounded-2xl border px-4 py-1 text-sm font-medium">
@@ -194,11 +195,12 @@
             </div>
           </div>
           <div class="space-y-1">
-            <h2 class="text-lg font-semibold">Thom Yorke 👨‍🎤</h2>
-            <h3 class="text-sm text-neutral-500">@thomyorkeoffc</h3>
+            <h2 class="text-lg font-semibold">Jeffrey Coleman Jr</h2>
+            <h3 class="text-sm text-neutral-500">@jeffreyjr</h3>
             <h3 class="text-sm">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              soluta, pariatur esse cupiditate numquam optio!
+              I feel like the sequel
+              <br />
+              You wanna see but you were kinda hoping they would never make
             </h3>
           </div>
           <div class="flex gap-3 items-center">
@@ -215,6 +217,7 @@
 
         <!-- Post Section -->
         <div class="space-y-3">
+          <!-- Nav Tabs -->
           <div
             class="flex pt-4 border-b border-zinc-800 items-center justify-evenly"
           >
@@ -229,39 +232,29 @@
           <!-- Posts -->
           <div class="flex gap-3 border-b border-neutral-800 px-4 py-3">
             <div class="">
-              <div class="size-10 rounded-full bg-white"></div>
+              <div class="size-10 rounded-full bg-white overflow-hidden">
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.3NoIQmOqCodp08f28pWIWwHaJ4%3Fcb%3Dthfc1falcon2%26pid%3DApi&f=1&ipt=bbca61387c868b21908f6dc0ddd41b9ba43d688d44b2257b14c01904f7c42eef&ipo=images"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
             </div>
             <div class="space-y-2">
               <!-- Post Creator -->
-              <div class="flex gap-2 text-sm items-center text-neutral-500">
-                <h3 class="text-neutral-200 text-base font-medium">
-                  Indah Pra Karya
-                </h3>
-                <h3 class="">@indsab</h3>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="lucide lucide-dot-icon lucide-dot"
-                >
-                  <circle cx="12.1" cy="12.1" r="1" />
-                </svg>
-                <h3>Just now</h3>
+              <div class="flex gap-1 text-sm items-center text-neutral-500">
+                <h3 class="text-neutral-200 font-medium">Jeffrey Coleman Jr</h3>
+                <h3 class="">@jeffreyjr</h3>
+                <span>&bullet;</span>
+                <h3>1w ago</h3>
               </div>
               <!-- Post Content -->
               <div>
                 <p class="text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Molestias, laboriosam veritatis aliquam perferendis expedita
-                  maxime qui delectus? Rerum explicabo fugit, expedita
-                  recusandae ullam atque itaque porro doloribus perspiciatis
-                  iste? Recusandae!
+                  Just bought Macbook Neo. Such a cool and much needed product.
+                  Sadly, with an ai doing all the heavy lifting, this will be
+                  out of commission when the bubble burst. So sad to see soo
+                  many projects lost in a couple of years
                 </p>
               </div>
               <!-- Post Reaction -->
@@ -272,8 +265,158 @@
                     width="16"
                     height="16"
                     viewBox="0 0 24 24"
-                    fill="#f6339a"
-                    stroke="#f6339a"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart-icon lucide-heart"
+                  >
+                    <path
+                      d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                    />
+                  </svg>
+                  <span class="text-xs">400</span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-square-text-icon lucide-message-square-text"
+                  >
+                    <path
+                      d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                    />
+                    <path d="M7 11h10" />
+                    <path d="M7 15h6" />
+                    <path d="M7 7h8" />
+                  </svg>
+                  <span class="text-xs">290 replied</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Posts -->
+          <div class="flex gap-3 border-b border-neutral-800 px-4 py-3">
+            <div class="">
+              <div class="size-10 rounded-full bg-white overflow-hidden">
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.3NoIQmOqCodp08f28pWIWwHaJ4%3Fcb%3Dthfc1falcon2%26pid%3DApi&f=1&ipt=bbca61387c868b21908f6dc0ddd41b9ba43d688d44b2257b14c01904f7c42eef&ipo=images"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <!-- Post Creator -->
+              <div class="flex gap-1 text-sm items-center text-neutral-500">
+                <h3 class="text-neutral-200 font-medium">Jeffrey Coleman Jr</h3>
+                <h3 class="">@jeffreyjr</h3>
+                <span>&bullet;</span>
+                <h3>2w ago</h3>
+              </div>
+              <!-- Post Content -->
+              <div>
+                <p class="text-sm">
+                  I was really surprised the iceskating girl couldn't raised her
+                  leg higher
+                </p>
+              </div>
+              <!-- Post Reaction -->
+              <div class="flex gap-3 text-neutral-500">
+                <div class="flex gap-1 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-heart-icon lucide-heart"
+                  >
+                    <path
+                      d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+                    />
+                  </svg>
+                  <span class="text-xs">932</span>
+                </div>
+                <div class="flex gap-1 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-message-square-text-icon lucide-message-square-text"
+                  >
+                    <path
+                      d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z"
+                    />
+                    <path d="M7 11h10" />
+                    <path d="M7 15h6" />
+                    <path d="M7 7h8" />
+                  </svg>
+                  <span class="text-xs">702 replied</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Posts -->
+          <div class="flex gap-3 border-b border-neutral-800 px-4 py-3">
+            <div class="">
+              <div class="size-10 rounded-full bg-white overflow-hidden">
+                <img
+                  src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthf.bing.com%2Fth%2Fid%2FOIP.3NoIQmOqCodp08f28pWIWwHaJ4%3Fcb%3Dthfc1falcon2%26pid%3DApi&f=1&ipt=bbca61387c868b21908f6dc0ddd41b9ba43d688d44b2257b14c01904f7c42eef&ipo=images"
+                  class="w-full h-full object-cover"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="space-y-2">
+              <!-- Post Creator -->
+              <div class="flex gap-1 text-sm items-center text-neutral-500">
+                <h3 class="text-neutral-200 font-medium">Jeffrey Coleman Jr</h3>
+                <h3 class="">@jeffreyjr</h3>
+                <span>&bullet;</span>
+                <h3>2w ago</h3>
+              </div>
+              <!-- Post Content -->
+              <div>
+                <p class="text-sm">
+                  Life has a way of throwing chaos at us, and sometimes the only
+                  thing to do is laugh at it. These Punsworld memes capture that
+                  exact feeling, the tiny frustrations, the awkward missteps,
+                  and the moments that sting just enough to be funny. Each post
+                  turns everyday struggles into bite-sized humor, making the
+                  ordinary feel oddly entertaining.
+                </p>
+              </div>
+              <!-- Post Reaction -->
+              <div class="flex gap-3 text-neutral-500">
+                <div class="flex gap-1 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
@@ -313,11 +456,9 @@
         </div>
       </main>
 
-      <!-- Profile Section -->
+      <!-- Suggestion Section -->
       <aside class="w-sm p-4 hidden md:block h-screen sticky top-0">
         <div class="space-y-4">
-          <!-- Profile Card -->
-
           <!-- Suggestion Card -->
           <div class="p-4 rounded-lg bg-zinc-800 space-y-4">
             <h2 class="text-base font-medium">People you might know</h2>
@@ -326,12 +467,19 @@
             <div>
               <div class="flex gap-3 items-center">
                 <div>
-                  <div class="size-10 rounded-full bg-white"></div>
+                  <div class="size-10 rounded-full bg-white overflow-hidden">
+                    <img
+                      src="
+                    https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthfvnext.bing.com%2Fth%2Fid%2FOIP.e5ETAQN1OE_MPToZLLCwdwHaHa%3Fcb%3Dthfvnextfalcon2%26pid%3DApi&f=1&ipt=fb7a58a021b345d2976f94ad5e9af20d7c251afe94fefa33327087a32e83fee6&ipo=images"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="flex-1">
-                  <h2 class="text-sm font-medium">Ahmadi Fadlil</h2>
+                  <h2 class="text-sm font-medium">Radiohead</h2>
                   <h3 class="text-sm font-light text-neutral-500">
-                    @loremipsum
+                    @radiohead
                   </h3>
                 </div>
                 <div>
@@ -343,16 +491,102 @@
                 </div>
               </div>
             </div>
+
+            <!-- Person -->
             <div>
               <div class="flex gap-3 items-center">
                 <div>
-                  <div class="size-10 rounded-full bg-white"></div>
+                  <div class="size-10 rounded-full bg-white overflow-hidden">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.87eUHBdJNopSeidY3ci3xQHaJ3%3Fpid%3DApi&f=1&ipt=acce63387570cfc48c6e901294e1430587303908d93777104ec566be6a470134&ipo=images"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
                 </div>
                 <div class="flex-1">
-                  <h2 class="text-sm font-medium">Ahmadi Fadlil</h2>
+                  <h2 class="text-sm font-medium">Mr Beast</h2>
                   <h3 class="text-sm font-light text-neutral-500">
-                    @loremipsum
+                    @mrbeast6000
                   </h3>
+                </div>
+                <div>
+                  <button
+                    class="px-4 py-1 rounded-2xl border text-sm font-medium"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Person -->
+            <div>
+              <div class="flex gap-3 items-center">
+                <div>
+                  <div class="size-10 rounded-full bg-white overflow-hidden">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.EuFQ4lmj9q6F8nEjnUO_sAHaHa%3Fpid%3DApi&f=1&ipt=44c9e204c7ed5941e33ac7567eecd59847feecb532a8f2bc4743affd8a2f7967&ipo=images"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-sm font-medium">Javaris Jamar Javarrison</h2>
+                  <h3 class="text-sm font-light text-neutral-500">@javaris</h3>
+                </div>
+                <div>
+                  <button
+                    class="px-4 py-1 rounded-2xl border text-sm font-medium"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Person -->
+            <div>
+              <div class="flex gap-3 items-center">
+                <div>
+                  <div class="size-10 rounded-full bg-white overflow-hidden">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.JQn_2XxKARPehVveJSB-WAHaIL%3Fpid%3DApi&f=1&ipt=3368bbd5e26d4bc404db8a96311c5d4efc621cd2de722798fa70e4684ea377dc&ipo=images"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-sm font-medium">Nyquillus Dillward</h2>
+                  <h3 class="text-sm font-light text-neutral-500">@nyqui</h3>
+                </div>
+                <div>
+                  <button
+                    class="px-4 py-1 rounded-2xl border text-sm font-medium"
+                  >
+                    Follow
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Person -->
+            <div>
+              <div class="flex gap-3 items-center">
+                <div>
+                  <div class="size-10 rounded-full bg-white overflow-hidden">
+                    <img
+                      src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.erYThFpjXygEKZkcSoOMbgHaE8%3Fpid%3DApi&f=1&ipt=e6a68260f37313429700ea4fea0968cbfa69f87168527ecbbdbd59acd588ee70&ipo=images"
+                      class="w-full h-full object-cover"
+                      alt=""
+                    />
+                  </div>
+                </div>
+                <div class="flex-1">
+                  <h2 class="text-sm font-medium">Leoz Maxwell Jilliumz</h2>
+                  <h3 class="text-sm font-light text-neutral-500">@leozmj</h3>
                 </div>
                 <div>
                   <button
